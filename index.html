@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Venture</title>
+    <link rel="stylesheet" href="css/style.css">
+		<style>
+			body {
+  background-image: url("bg.png");
+  background-size: cover;
+  font-family: cursive;
+}
+
+
+h1 {
+  text-shadow: 0 10px 10px red;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    margin-top: 13px;
+}
+
+h2 {
+    text-shadow: 0 10px 5px black;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
+    color: white;
+}
+h5{
+	text-shadow: 0 2px 3px black;
+	color: antiquewhite;
+	font-size: 20px;
+	margin-left: 150px;
+}
+
+#puzzle {
+				position: relative;
+				width: 600px;
+				height: 600px;
+        		margin-bottom: 15px;
+				margin-left: 150px;
+				border: 2px solid white;
+			}
+.piece {
+				border: 2px solid white;
+				position: absolute;
+				width: 150px;
+				height: 150px;
+				background-repeat: no-repeat;
+				background-size: 600px 600px;
+				cursor: pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Welcome to CV1B of CRYPTO VENTURE...</h1>
+    
+	
+			<h5>Unlock the mystery with your wits and unveil the hidden key.</h5>
+
+		<div id="puzzle">
+			<img
+				src="tech.png"
+				alt="Puzzle Image"
+				style="display: none" />
+			<div
+				class="piece"
+				data-x="0"
+				data-y="0"
+				style="
+					left: 0px;
+					top: 0px;
+					background-image: url('tech.png');
+					background-position: 0px -150px;
+					
+				"></div>
+			<div
+				class="piece"
+				data-x="150"
+				data-y="0"
+				style="
+					left: 150px;
+					top: 0px;
+					background-image: url('tech.png');
+					background-position: -450px -150px;
+					
+				"></div>
+			<div
+				class="piece"
+				data-x="300"
+				data-y="0"
+				style="
+					left: 300px;
+					top: 0px;
+					background-image: url('tech.png');
+					background-position: -300px 0px;
+				"></div>
+			<div
+				class="piece"
+				data-x="450"
+				data-y="0"
+				style="
+					left: 450px;
+					top: 0px;
+					background-image: url('tech.png');
+					background-position: -300px -300px;
+					
+				"></div>
+			<div
+				class="piece"
+				data-x="0"
+				data-y="150"
+				style="
+					left: 0px;
+					top: 150px;
+					background-image: url('tech.png');
+					
+					background-position: -300px -450px;
+				"></div>
+			<div
+				class="piece"
+				data-x="150"
+				data-y="150"
+				style="
+					left: 150px;
+					top: 150px;
+					background-image: url('tech.png');
+					background-position: -450px 0px;
+					
+				"></div>
+			<div
+				class="piece"
+				data-x="300"
+				data-y="150"
+				style="
+					left: 300px;
+					top: 150px;
+					background-image: url('tech.png');
+					background-position: -150px -450px;
+					
+				"></div>
+			<div
+				class="piece"
+				data-x="450"
+				data-y="150"
+				style="
+					left: 450px;
+					top: 150px;
+					background-image: url('tech.png');
+					background-position: -150px -150px;
+				"></div>
+			<div
+				class="piece"
+				data-x="0"
+				data-y="300"
+				style="
+					left: 0px;
+					top: 300px;
+					background-image: url('tech.png');
+					background-position: -450px -450px;
+				"></div>
+			<div
+				class="piece"
+				data-x="150"
+				data-y="300"
+				style="
+					left: 150px;
+					top: 300px;
+					background-image: url('tech.png');
+					
+					background-position: 0px -450px;
+
+				"></div>
+			<div
+				class="piece"
+				data-x="300"
+				data-y="300"
+				style="
+					left: 300px;
+					top: 300px;
+					background-image: url('tech.png');
+					background-position: -300px -150px;
+				"></div>
+			<div
+				class="piece"
+				data-x="450"
+				data-y="300"
+				style="
+					left: 450px;
+					top: 300px;
+					background-image: url('tech.png');
+					background-position: 0px -300px;
+					
+				"></div>
+			<div
+				class="piece"
+				data-x="0"
+				data-y="450"
+				style="
+					left: 0px;
+					top: 450px;
+					background-image: url('tech.png');
+					background-position: -150px -300px;
+				"></div>
+			<div
+				class="piece"
+				data-x="150"
+				data-y="450"
+				style="
+					left: 150px;
+					top: 450px;
+					background-image: url('tech.png');
+					
+					background-position: -150px 0px;
+				"></div>
+			<div
+				class="piece"
+				data-x="300"
+				data-y="450"
+				style="
+					left: 300px;
+					top: 450px;
+					background-image: url('tech.png');
+					
+					background-position: -450px -300px;
+				"></div>
+			<div
+				class="piece"
+				data-x="450"
+				data-y="450"
+				style="
+					left: 450px;
+					top: 450px;
+					background-image: url('tech.png');
+					background-position: 0px 0px;
+					
+				"></div>
+		</div>
+		<script>
+			let image = document.querySelector("img");
+			let puzzle = document.querySelector("#puzzle");
+			let successMsg = document.querySelector("#success");
+			let puzzleWidth = puzzle.offsetWidth;
+			let puzzleHeight = puzzle.offsetHeight;
+			let success = true;
+
+			let pieces = Array.from(document.querySelectorAll(".piece"));
+
+			// Make pieces draggable
+			pieces.forEach((piece) => {
+				piece.addEventListener("mousedown", startDrag);
+				piece.addEventListener("mouseup", stopDrag);
+				piece.addEventListener("mousemove", drag);
+			});
+
+			function startDrag(e) {
+				this.style.zIndex = 1;
+				this.style.opacity = 1;
+				this.dragging = true;
+				this.startX = e.clientX - this.offsetLeft;
+				this.startY = e.clientY - this.offsetTop;
+			}
+
+			function stopDrag() {
+				this.style.zIndex = 0;
+				this.style.opacity = 0.8;
+				this.dragging = false;
+				checkSuccess();
+			}
+
+			function drag(e) {
+				if (this.dragging) {
+					let x = e.clientX - this.startX;
+					let y = e.clientY - this.startY;
+					if (x < 0) x = 0;
+					if (x > puzzleWidth - this.offsetWidth)
+						x = puzzleWidth - this.offsetWidth;
+					if (y < 0) y = 0;
+					if (y > puzzleHeight - this.offsetHeight)
+						y = puzzleHeight - this.offsetHeight;
+					this.style.left = x + "px";
+					this.style.top = y + "px";
+				}
+			}
+		</script>
+	</body>
+</html>
